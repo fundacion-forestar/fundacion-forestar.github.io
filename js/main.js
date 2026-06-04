@@ -13,7 +13,7 @@ let lang = 'es';
 
 const t = {
   es: {
-    'nav-about':'Quiénes somos','nav-services':'Servicios','nav-project':'Proyecto',
+    'nav-about':'Quiénes somos','nav-services':'Servicios','nav-species':'Especies','nav-project':'Proyecto',
     'nav-carbon':'Bonos de Carbono','nav-team':'Equipo','nav-contact':'Contacto','nav-cta':'Contáctanos',
     'hero-badge':'🌿 Restauración Ecológica — Orinoquia Colombia',
     'hero-title-1':'Restauramos','hero-title-2':'bosques','hero-title-3':'generamos futuro sostenible',
@@ -37,6 +37,8 @@ const t = {
     'svc6-name':'Ecoturismo Científico','svc6-desc':'Recorridos guiados por ecosistemas restaurados de la Orinoquia con enfoque científico.',
     'svc7-name':'Consultoría Ambiental','svc7-desc':'Asesoría especializada en EIA, PMA, licencias ambientales y cumplimiento normativo.',
     'svc8-name':'Investigación y Monitoreo','svc8-desc':'Inventarios de flora y fauna, monitoreo de biodiversidad y análisis de carbono en biomasa.',
+    'especies-label':'Flora Nativa','especies-title-1':'Especies que','especies-title-2':'restauramos',
+    'especies-desc':'Trabajamos con 12 especies nativas del Orinoco, seleccionadas por su valor ecológico, capacidad de captura de carbono y resistencia en sabanas inundables de Arauca.',
     'project-label':'Proyecto Estrella','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
     'project-desc':'Restauración ecológica en 80 hectáreas vírgenes de la Orinoquia colombiana, con financiación EUROCLIMA+ de la Unión Europea. Un proyecto modelo para certificación Gold Standard.',
     'pstat1':'Árboles nativos','pstat2':'Colmenas Melipona','pstat3':'tCO₂ neto certificable','pstat4':'Presupuesto total',
@@ -69,7 +71,7 @@ const t = {
     'footer-copy':'© 2026 Fundación Forestar — Todos los derechos reservados'
   },
   en: {
-    'nav-about':'About us','nav-services':'Services','nav-project':'Project',
+    'nav-about':'About us','nav-services':'Services','nav-species':'Species','nav-project':'Project',
     'nav-carbon':'Carbon Bonds','nav-team':'Team','nav-contact':'Contact','nav-cta':'Contact us',
     'hero-badge':'🌿 Ecological Restoration — Orinoquía Colombia',
     'hero-title-1':'We restore','hero-title-2':'forests','hero-title-3':'building a sustainable future',
@@ -93,6 +95,8 @@ const t = {
     'svc6-name':'Scientific Ecotourism','svc6-desc':'Guided tours through restored ecosystems of the Orinoquía with scientific focus.',
     'svc7-name':'Environmental Consulting','svc7-desc':'Specialized advice on EIA, EMP, environmental permits, and regulatory compliance.',
     'svc8-name':'Research & Monitoring','svc8-desc':'Flora and fauna inventories, biodiversity monitoring, and biomass carbon analysis.',
+    'especies-label':'Native Flora','especies-title-1':'Species we','especies-title-2':'restore',
+    'especies-desc':'We work with 12 native Orinoco species, selected for their ecological value, carbon sequestration capacity, and resilience in the flooded savannas of Arauca.',
     'project-label':'Flagship Project','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
     'project-desc':'Ecological restoration on 80 virgin hectares of the Colombian Orinoquía, with EUROCLIMA+ funding from the European Union. A model project for Gold Standard certification.',
     'pstat1':'Native trees','pstat2':'Melipona hives','pstat3':'net tCO₂ certifiable','pstat4':'Total budget',
