@@ -79,7 +79,8 @@ body {
 .hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('https://image.pollinations.ai/prompt/tropical%20rainforest%20colombia%20orinoqu%C3%ADa%20aerial%20view%20lush%20green%20trees%20golden%20hour%20light%20professional%20nature%20photography?width=1920&height=1080&nologo=true&seed=42');
+  background: linear-gradient(135deg, #1b3d1b 0%, #2d6a2d 50%, #0d2b0d 100%);
+  background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&h=1080&q=80');
   background-size: cover; background-position: center; filter: brightness(0.45);
 }
 .hero-overlay {
@@ -153,7 +154,16 @@ section { padding: 5rem 5%; }
 
 .about-section { background: var(--cream); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-.about-image { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 20px 60px rgba(27,61,27,0.2); }
+
+/* Imagen con gradiente de fondo — visible siempre aunque la foto tarde en cargar */
+.about-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: 0 20px 60px rgba(27,61,27,0.2);
+  background: linear-gradient(160deg, #3a7a3a 0%, #1b3d1b 60%, #0d2b0d 100%);
+}
 .about-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 /* BADGE — panel de impacto */
@@ -220,7 +230,11 @@ section { padding: 5rem 5%; }
 .project-section { background: var(--forest-dark); color: var(--white); }
 .project-section .section-label { color: var(--carbon-gold); }
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-.project-image { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+.project-image {
+  border-radius: 20px; overflow: hidden; aspect-ratio: 4/3;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  background: linear-gradient(160deg, #2d6a2d 0%, #1b3d1b 100%);
+}
 .project-image img { width: 100%; height: 100%; object-fit: cover; }
 .project-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
 .project-stat { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 1.2rem; }
