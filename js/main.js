@@ -10,6 +10,8 @@ navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () 
 
 const langBtn = document.getElementById('langBtn');
 let lang = 'es';
+const langCycle = { es: 'en', en: 'it', it: 'es' };
+const langLabel = { es: 'EN', en: 'IT', it: 'ES' };
 
 const t = {
   es: {
@@ -127,6 +129,64 @@ const t = {
     'footer-desc':'Non-profit foundation dedicated to ecological restoration, carbon bonds, and biodiversity conservation in the Colombian Orinoquía and Amazonia.',
     'footer-services':'Services','footer-contact':'Contact',
     'footer-copy':'© 2026 Fundación Forestar — All rights reserved'
+  },
+  it: {
+    'nav-about':'Chi siamo','nav-services':'Servizi','nav-species':'Specie','nav-project':'Progetto',
+    'nav-carbon':'Crediti di Carbonio','nav-team':'Team','nav-contact':'Contatti','nav-cta':'Contattaci',
+    'hero-badge':'🌿 Ripristino Ecologico — Orinochia Colombia',
+    'hero-title-1':'Ripristiniamo','hero-title-2':'foreste','hero-title-3':'costruiamo un futuro sostenibile',
+    'hero-subtitle':'Fondazione no-profit leader nel ripristino ecologico, crediti di carbonio certificati e conservazione della biodiversità nell\'Orinochia e Amazzonia colombiana.',
+    'hero-btn1':'🌱 Vedi crediti di carbonio','hero-btn2':'Il nostro progetto',
+    'stat1-num':'80.000','stat1-label':'Alberi nativi','stat2-num':'3.151','stat2-label':'tCO₂ certificabili',
+    'stat3-num':'80 ha','stat3-label':'In ripristino','stat4-num':'2018','stat4-label':'Fondata',
+    'about-label':'Chi siamo','about-title-1':'Guidiamo il ripristino dell\'','about-title-2':'Orinochia',
+    'about-desc':'Dal 2018, Fundación Forestar lavora nel ripristino ecologico degli ecosistemi degradati in Colombia, combinando scienza, tecnologia e comunità locali per creare un impatto ambientale duraturo.',
+    'feat1-title':'Certificazione Gold Standard','feat1-desc':'Crediti di carbonio verificati con i più alti standard internazionali',
+    'feat2-title':'Cooperazione Internazionale','feat2-desc':'Progetti finanziati da EUROCLIMA+, GEF/UNDP e Unione Europea',
+    'feat3-title':'Biodiversità e Comunità','feat3-desc':'400 arnie di meliponicultura con api native senza pungiglione',
+    'feat4-title':'Scienza e Innovazione','feat4-desc':'Monitoraggio con metodologia IPCC: 39,4 tCO₂/ha in zona vergine',
+    'services-label':'Portafoglio Servizi','services-title-1':'Soluzioni ambientali','services-title-2':'integrali',
+    'services-desc':'Offriamo servizi specializzati in ripristino ecologico, crediti di carbonio e conservazione della biodiversità per aziende, governi e organismi internazionali.',
+    'svc1-name':'Ripristino Ecologico','svc1-desc':'Piantagione di specie native, controllo dell\'erosione e monitoraggio degli ecosistemi degradati.',
+    'svc2-name':'Crediti di Carbonio','svc2-desc':'Certificazione e vendita di crediti di carbonio verificati Gold Standard per la compensazione internazionale.',
+    'svc3-name':'Compensazione RSI','svc3-desc':'Programmi di responsabilità sociale d\'impresa con adozione di alberi nativi certificati.',
+    'svc4-name':'Meliponicultura','svc4-desc':'Istituzione e gestione di arnie di api native senza pungiglione (Melipona eburnea).',
+    'svc5-name':'Educazione Ambientale','svc5-desc':'Workshop e programmi formativi su conservazione, biodiversità e cambiamento climatico.',
+    'svc6-name':'Ecoturismo Scientifico','svc6-desc':'Tour guidati negli ecosistemi ripristinati dell\'Orinochia con approccio scientifico.',
+    'svc7-name':'Consulenza Ambientale','svc7-desc':'Consulenza specializzata in VIA, PGA, licenze ambientali e conformità normativa.',
+    'svc8-name':'Ricerca e Monitoraggio','svc8-desc':'Inventari di flora e fauna, monitoraggio della biodiversità e analisi del carbonio nella biomassa.',
+    'especies-label':'Flora Nativa','especies-title-1':'Specie che','especies-title-2':'ripristiniamo',
+    'especies-desc':'Lavoriamo con 12 specie native dell\'Orinoco, selezionate per il loro valore ecologico, capacità di sequestro del carbonio e resistenza nelle savane allagate di Arauca.',
+    'project-label':'Progetto Principale','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
+    'project-desc':'Ripristino ecologico su 80 ettari vergini dell\'Orinochia colombiana, con finanziamento EUROCLIMA+ dell\'Unione Europea. Un progetto modello per la certificazione Gold Standard.',
+    'pstat1':'Alberi nativi','pstat2':'Arnie Melipona','pstat3':'tCO₂ netto certificabile','pstat4':'Budget totale',
+    'carbon-label':'Mercato del Carbonio','carbon-title-1':'Crediti di Carbonio','carbon-title-2':'Gold Standard',
+    'carbon-desc':'Compensazioni verificate internazionalmente con i più alti standard di qualità. Zona vergine con 39,4 tCO₂/ha — massimo potenziale di sequestro.',
+    'carbon-badge-sub':'Certificazione internazionale',
+    'pkg1-name':'Moriche','pkg1-tons':'100 tonnellate CO₂','pkg1-per':'USD 27 / tCO₂',
+    'pkg2-name':'Caño','pkg2-tons':'300 tonnellate CO₂','pkg2-per':'USD 23 / tCO₂',
+    'pkg3-name':'Sabana','pkg3-tons':'600 tonnellate CO₂','pkg3-per':'USD 20 / tCO₂',
+    'pkg4-name':'Orinoquia','pkg4-tons':'3.151 tonnellate CO₂','pkg4-per':'USD 16 / tCO₂',
+    'pkg-cta':'Richiedi','pkg-popular':'Popolare',
+    'team-label':'Il Nostro Team','team-title-1':'Esperti in','team-title-2':'ecosistemi',
+    'team-desc':'Un team multidisciplinare di professionisti impegnati nel ripristino ecologico e nella sostenibilità ambientale.',
+    'tm1-role':'Presidente / Rappresentante Legale','tm2-role':'Dir. Relazioni Internazionali',
+    'tm2-exp':'Gestione di progetti internazionali, crediti di carbonio e finanziamenti europei',
+    'tm3-role':'Responsabile Operativo','tm4-role':'Coordinatore di Progetto',
+    'tm5-role':'Biologo Specialista','tm6-role':'Ingegnere Ambientale',
+    'contact-label':'Contatti','contact-title-1':'Parliamo del','contact-title-2':'futuro',
+    'contact-desc':'Che tu voglia compensare la tua impronta di carbonio, investire in crediti certificati o collaborare a progetti di ripristino, siamo pronti a creare una proposta su misura per te.',
+    'ci1-title':'Email principale','ci2-title':'Relazioni Internazionali',
+    'ci3-title':'Colombia','ci4-title':'Social media','ci5-title':'Dati legali',
+    'ci5-founded':'Fondata: 12 ottobre 2018',
+    'form-title':'Inviaci un messaggio','form-name':'Nome e cognome','form-org':'Azienda / Organizzazione',
+    'form-email':'Indirizzo email','form-phone':'Telefono (opzionale)',
+    'form-interest':'Area di interesse','form-message':'Messaggio','form-submit':'🌿 Invia messaggio',
+    'int-select':'Seleziona...','int-carbon':'Crediti di carbonio','int-restoration':'Ripristino ecologico',
+    'int-rse':'Compensazione RSI','int-bees':'Meliponicultura','int-consulting':'Consulenza ambientale','int-other':'Altro',
+    'footer-desc':'Fondazione no-profit dedicata al ripristino ecologico, ai crediti di carbonio e alla conservazione della biodiversità nell\'Orinochia e Amazzonia colombiana.',
+    'footer-services':'Servizi','footer-contact':'Contatti',
+    'footer-copy':'© 2026 Fundación Forestar — Tutti i diritti riservati'
   }
 };
 
@@ -137,11 +197,12 @@ function applyLang(l) {
     const key = el.getAttribute('data-i18n');
     if (tr[key] !== undefined) el.textContent = tr[key];
   });
-  langBtn.textContent = l === 'es' ? 'EN' : 'ES';
+  langBtn.textContent = langLabel[l];
+  langBtn.title = { es: 'Cambiar a inglés', en: 'Switch to Italian', it: 'Passa allo spagnolo' }[l];
   document.documentElement.lang = l;
 }
 
-langBtn.addEventListener('click', () => applyLang(lang === 'es' ? 'en' : 'es'));
+langBtn.addEventListener('click', () => applyLang(langCycle[lang]));
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
@@ -152,7 +213,8 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   e.preventDefault();
   const btn = e.target.querySelector('.btn-submit');
   const orig = btn.textContent;
-  btn.textContent = lang === 'es' ? '✅ ¡Mensaje enviado!' : '✅ Message sent!';
+  const msgs = { es: '✅ ¡Mensaje enviado!', en: '✅ Message sent!', it: '✅ Messaggio inviato!' };
+  btn.textContent = msgs[lang];
   btn.style.background = '#4a8c4a';
   btn.disabled = true;
   setTimeout(() => { e.target.reset(); btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 3500);
