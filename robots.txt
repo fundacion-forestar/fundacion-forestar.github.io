@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fundacion-forestar.github.io/sitemap.xml
