@@ -16,7 +16,7 @@ const langLabel = { es: 'EN', en: 'IT', it: 'ES' };
 const t = {
   es: {
     'nav-about':'Quiénes somos','nav-services':'Servicios','nav-species':'Especies','nav-project':'Proyecto',
-    'nav-carbon':'Bonos de Carbono','nav-team':'Equipo','nav-contact':'Contacto','nav-cta':'Contáctanos',
+    'nav-calc':'Calculadora','nav-carbon':'Bonos CO₂','nav-team':'Equipo','nav-contact':'Contacto','nav-cta':'Contáctanos',
     'hero-badge':'🌿 Restauración Ecológica — Orinoquia Colombia',
     'hero-title-1':'Restauramos','hero-title-2':'bosques','hero-title-3':'generamos futuro sostenible',
     'hero-subtitle':'Fundación sin ánimo de lucro líder en restauración ecológica, bonos de carbono certificados y conservación de la biodiversidad en la Orinoquia y Amazonia colombiana.',
@@ -44,6 +44,16 @@ const t = {
     'project-label':'Proyecto Estrella','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
     'project-desc':'Restauración ecológica en 80 hectáreas vírgenes de la Orinoquia colombiana, con financiación EUROCLIMA+ de la Unión Europea. Un proyecto modelo para certificación Gold Standard.',
     'pstat1':'Árboles nativos','pstat2':'Colmenas Melipona','pstat3':'tCO₂ neto certificable','pstat4':'Presupuesto total',
+    'calc-label':'Calculadora Ambiental','calc-title-1':'¿Cuánto CO₂','calc-title-2':'emite tu empresa?',
+    'calc-desc':'Calcula tu huella de carbono en menos de un minuto y descubre cuántos bonos Gold Standard necesitas para ser carbono neutro.',
+    'calc-emp-label':'Empleados en la empresa','calc-elec-label':'Electricidad mensual (kWh)',
+    'calc-estimate':'Estimar','calc-elec-hint':'Si no tienes el dato, haz clic en "Estimar" para usar un promedio por empleado.',
+    'calc-int-flights':'Vuelos internacionales/año','calc-nac-flights':'Vuelos nacionales/año','calc-vehicles':'Vehículos empresa',
+    'calc-cta-btn':'🌱 Calcular mi huella de carbono',
+    'calc-result-lbl':'Tu huella de carbono anual','calc-breakdown':'Desglose de emisiones',
+    'calc-b-elec':'Electricidad','calc-b-vuelos':'Vuelos','calc-b-vehs':'Vehículos','calc-b-oficina':'Oficina',
+    'calc-rec-title':'Paquete recomendado para compensar','calc-rec-btn':'🌿 Solicitar este paquete',
+    'calc-placeholder':'Completa los datos de tu empresa y haz clic en "Calcular" para ver tu huella de carbono y el paquete de bonos recomendado.',
     'carbon-label':'Mercado de Carbono','carbon-title-1':'Bonos de Carbono','carbon-title-2':'Gold Standard',
     'carbon-desc':'Compensaciones verificadas internacionalmente con los más altos estándares de calidad. Zona virgen con 39.4 tCO₂/ha — máximo potencial de captura.',
     'carbon-badge-sub':'Certificación internacional',
@@ -74,7 +84,7 @@ const t = {
   },
   en: {
     'nav-about':'About us','nav-services':'Services','nav-species':'Species','nav-project':'Project',
-    'nav-carbon':'Carbon Bonds','nav-team':'Team','nav-contact':'Contact','nav-cta':'Contact us',
+    'nav-calc':'Calculator','nav-carbon':'Carbon Bonds','nav-team':'Team','nav-contact':'Contact','nav-cta':'Contact us',
     'hero-badge':'🌿 Ecological Restoration — Orinoquía Colombia',
     'hero-title-1':'We restore','hero-title-2':'forests','hero-title-3':'building a sustainable future',
     'hero-subtitle':'Non-profit foundation leading ecological restoration, certified carbon bonds, and biodiversity conservation in the Colombian Orinoquía and Amazonia.',
@@ -102,6 +112,16 @@ const t = {
     'project-label':'Flagship Project','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
     'project-desc':'Ecological restoration on 80 virgin hectares of the Colombian Orinoquía, with EUROCLIMA+ funding from the European Union. A model project for Gold Standard certification.',
     'pstat1':'Native trees','pstat2':'Melipona hives','pstat3':'net tCO₂ certifiable','pstat4':'Total budget',
+    'calc-label':'Environmental Calculator','calc-title-1':'How much CO₂','calc-title-2':'does your company emit?',
+    'calc-desc':'Calculate your carbon footprint in under a minute and find out how many Gold Standard bonds you need to become carbon neutral.',
+    'calc-emp-label':'Company employees','calc-elec-label':'Monthly electricity (kWh)',
+    'calc-estimate':'Estimate','calc-elec-hint':'If you don\'t have the figure, click "Estimate" to use an average per employee.',
+    'calc-int-flights':'International flights/year','calc-nac-flights':'Domestic flights/year','calc-vehicles':'Company vehicles',
+    'calc-cta-btn':'🌱 Calculate my carbon footprint',
+    'calc-result-lbl':'Your annual carbon footprint','calc-breakdown':'Emissions breakdown',
+    'calc-b-elec':'Electricity','calc-b-vuelos':'Flights','calc-b-vehs':'Vehicles','calc-b-oficina':'Office',
+    'calc-rec-title':'Recommended package to offset','calc-rec-btn':'🌿 Request this package',
+    'calc-placeholder':'Fill in your company data and click "Calculate" to see your carbon footprint and the recommended bonds package.',
     'carbon-label':'Carbon Market','carbon-title-1':'Carbon Bonds','carbon-title-2':'Gold Standard',
     'carbon-desc':'Internationally verified offsets with the highest quality standards. Virgin zone with 39.4 tCO₂/ha — maximum sequestration potential.',
     'carbon-badge-sub':'International certification',
@@ -132,7 +152,7 @@ const t = {
   },
   it: {
     'nav-about':'Chi siamo','nav-services':'Servizi','nav-species':'Specie','nav-project':'Progetto',
-    'nav-carbon':'Crediti di Carbonio','nav-team':'Team','nav-contact':'Contatti','nav-cta':'Contattaci',
+    'nav-calc':'Calcolatore','nav-carbon':'Crediti CO₂','nav-team':'Team','nav-contact':'Contatti','nav-cta':'Contattaci',
     'hero-badge':'🌿 Ripristino Ecologico — Orinochia Colombia',
     'hero-title-1':'Ripristiniamo','hero-title-2':'foreste','hero-title-3':'costruiamo un futuro sostenibile',
     'hero-subtitle':'Fondazione no-profit leader nel ripristino ecologico, crediti di carbonio certificati e conservazione della biodiversità nell\'Orinochia e Amazzonia colombiana.',
@@ -160,6 +180,16 @@ const t = {
     'project-label':'Progetto Principale','project-title-1':'Caño Juriepe —','project-title-2':'Vereda La Esperanza',
     'project-desc':'Ripristino ecologico su 80 ettari vergini dell\'Orinochia colombiana, con finanziamento EUROCLIMA+ dell\'Unione Europea. Un progetto modello per la certificazione Gold Standard.',
     'pstat1':'Alberi nativi','pstat2':'Arnie Melipona','pstat3':'tCO₂ netto certificabile','pstat4':'Budget totale',
+    'calc-label':'Calcolatore Ambientale','calc-title-1':'Quanta CO₂','calc-title-2':'emette la tua azienda?',
+    'calc-desc':'Calcola la tua impronta di carbonio in meno di un minuto e scopri quanti crediti Gold Standard ti servono per diventare carbon neutral.',
+    'calc-emp-label':'Dipendenti dell\'azienda','calc-elec-label':'Elettricità mensile (kWh)',
+    'calc-estimate':'Stima','calc-elec-hint':'Se non hai il dato, clicca su "Stima" per usare una media per dipendente.',
+    'calc-int-flights':'Voli internazionali/anno','calc-nac-flights':'Voli nazionali/anno','calc-vehicles':'Veicoli aziendali',
+    'calc-cta-btn':'🌱 Calcola la mia impronta di carbonio',
+    'calc-result-lbl':'La tua impronta di carbonio annuale','calc-breakdown':'Ripartizione delle emissioni',
+    'calc-b-elec':'Elettricità','calc-b-vuelos':'Voli','calc-b-vehs':'Veicoli','calc-b-oficina':'Ufficio',
+    'calc-rec-title':'Pacchetto consigliato per compensare','calc-rec-btn':'🌿 Richiedi questo pacchetto',
+    'calc-placeholder':'Inserisci i dati della tua azienda e clicca su "Calcola" per vedere la tua impronta di carbonio e il pacchetto crediti consigliato.',
     'carbon-label':'Mercato del Carbonio','carbon-title-1':'Crediti di Carbonio','carbon-title-2':'Gold Standard',
     'carbon-desc':'Compensazioni verificate internazionalmente con i più alti standard di qualità. Zona vergine con 39,4 tCO₂/ha — massimo potenziale di sequestro.',
     'carbon-badge-sub':'Certificazione internazionale',
@@ -220,163 +250,116 @@ document.getElementById('contactForm').addEventListener('submit', e => {
   setTimeout(() => { e.target.reset(); btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 3500);
 });
 
+/* ===== CALCULADORA DE HUELLA DE CARBONO ===== */
+const cEmpSlider = document.getElementById('cEmp');
+const cEmpValEl = document.getElementById('cEmpVal');
+cEmpSlider.addEventListener('input', () => { cEmpValEl.textContent = cEmpSlider.value; });
+
+document.getElementById('cElecEstBtn').addEventListener('click', () => {
+  const emp = parseInt(cEmpSlider.value) || 25;
+  document.getElementById('cElec').value = emp * 180;
+});
+
+function changeCount(id, delta) {
+  const el = document.getElementById(id);
+  const val = Math.max(0, parseInt(el.textContent) + delta);
+  el.textContent = val;
+}
+
+function calcularHuella() {
+  const empleados = parseInt(cEmpSlider.value) || 0;
+  const elecMes = parseFloat(document.getElementById('cElec').value) || (empleados * 180);
+  const vInt = parseInt(document.getElementById('cVInt').textContent) || 0;
+  const vNac = parseInt(document.getElementById('cVNac').textContent) || 0;
+  const vehs = parseInt(document.getElementById('cVehs').textContent) || 0;
+
+  // Factores de emisión (metodología simplificada)
+  // Electricidad: 0.136 kgCO₂/kWh (factor SIN Colombia 2022)
+  // Vuelo int: 1.8 tCO₂ promedio (economy, ~4.000 km)
+  // Vuelo nac: 0.25 tCO₂ promedio (economy, ~600 km Colombia)
+  // Vehículo: 3.5 tCO₂/año (auto promedio, 15.000 km/año)
+  // Empleado oficina: 0.5 tCO₂/año (baseline)
+  const eElec   = (elecMes * 12 * 0.136) / 1000;
+  const eVuelos = vInt * 1.8 + vNac * 0.25;
+  const eVehs   = vehs * 3.5;
+  const eOfic   = empleados * 0.5;
+  const total   = eElec + eVuelos + eVehs + eOfic;
+
+  const fmt = n => n.toFixed(1);
+  const pct = n => (total > 0 ? Math.round((n / total) * 100) : 0) + '%';
+
+  document.getElementById('rTotal').textContent = fmt(total);
+  document.getElementById('rElec').textContent   = fmt(eElec) + ' t';
+  document.getElementById('rVuelos').textContent = fmt(eVuelos) + ' t';
+  document.getElementById('rVehs').textContent   = fmt(eVehs) + ' t';
+  document.getElementById('rOficina').textContent = fmt(eOfic) + ' t';
+
+  // Equivalencia visual
+  const arboles = Math.round(total * 50);
+  const equivTexts = {
+    es: `≈ lo que absorben ${arboles.toLocaleString()} árboles en un año`,
+    en: `≈ what ${arboles.toLocaleString()} trees absorb in one year`,
+    it: `≈ ciò che assorbono ${arboles.toLocaleString()} alberi in un anno`
+  };
+  document.getElementById('rEquiv').textContent = equivTexts[lang];
+
+  // Barras animadas
+  setTimeout(() => {
+    document.getElementById('rElecBar').style.width    = pct(eElec);
+    document.getElementById('rVuelosBar').style.width  = pct(eVuelos);
+    document.getElementById('rVehsBar').style.width    = pct(eVehs);
+    document.getElementById('rOficinaBar').style.width = pct(eOfic);
+  }, 80);
+
+  // Paquete recomendado
+  const tons = Math.ceil(total);
+  let pkg, emoji, priceUSD, priceEUR, priceCOP;
+  if      (tons <= 100)  { pkg = 'Moriche';   emoji = '🌿'; priceUSD = 'USD 2,700';  priceEUR = '€2,600';  priceCOP = 'COP 11.5M'; }
+  else if (tons <= 300)  { pkg = 'Caño';      emoji = '🌊'; priceUSD = 'USD 6,900';  priceEUR = '€6,650';  priceCOP = 'COP 29.5M'; }
+  else if (tons <= 600)  { pkg = 'Sabana';    emoji = '🌾'; priceUSD = 'USD 12,000'; priceEUR = '€11,580'; priceCOP = 'COP 51M'; }
+  else if (tons <= 3151) { pkg = 'Orinoquia'; emoji = '🦅'; priceUSD = 'USD 50,416'; priceEUR = '€48,700'; priceCOP = 'COP 215M'; }
+  else                   { pkg = { es:'Personalizado', en:'Custom', it:'Personalizzato' }[lang]; emoji = '🌍'; priceUSD = { es:'Consultar', en:'Contact us', it:'Consultare' }[lang]; priceEUR = '—'; priceCOP = '—'; }
+
+  document.getElementById('rPkgEmoji').textContent = emoji;
+  document.getElementById('rPkgName').textContent  = pkg;
+  document.getElementById('rPkgPrice').textContent = priceUSD;
+  document.getElementById('rPkgSub').textContent   = `${priceEUR} · ${priceCOP} · ${tons} tCO₂`;
+
+  // Mostrar resultado, ocultar placeholder
+  document.getElementById('calcPlaceholder').style.display = 'none';
+  const result = document.getElementById('calcResult');
+  result.classList.remove('hidden');
+  result.classList.add('visible');
+  result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
 /* ===== MODALES DE SERVICIOS ===== */
 const svcData = [
-  {
-    label: 'Restauración de Ecosistemas',
-    name: 'Restauración Ecológica',
-    img: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Programa completo de restauración ecológica en ecosistemas degradados de la Orinoquia colombiana. Utilizamos 12 especies nativas seleccionadas científicamente para recuperar la cobertura vegetal, el suelo y la biodiversidad en áreas intervenidas.',
-    includes: [
-      'Diagnóstico del suelo y estado del ecosistema',
-      'Selección de 12+ especies nativas del Orinoco',
-      'Siembra directa y transplante de plántulas',
-      'Control de erosión y compactación del suelo',
-      'Monitoreo de supervivencia y crecimiento',
-      'Reportes georeferenciados con coordenadas GPS',
-      'Cálculo de CO₂ capturado (metodología IPCC)'
-    ],
-    audience: 'Propietarios de predios rurales, empresas con obligaciones de compensación ambiental, entidades territoriales y organismos de cooperación internacional como EUROCLIMA+ y GEF/PNUD.',
-    price: 'Desde USD 3,200/ha',
-    priceSub: '€3,100 · COP 13.8M por hectárea'
-  },
-  {
-    label: 'Mercado de Carbono',
-    name: 'Bonos de Carbono Gold Standard',
-    img: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Certificación y comercialización de créditos de carbono verificados bajo el estándar Gold Standard. La zona virgen de Caño Juriepe genera 39.4 tCO₂/ha — el máximo potencial de captura certificable en la región Orinoquia-Amazonia.',
-    includes: [
-      'Medición de biomasa forestal (metodología IPCC)',
-      'Cálculo certificado de toneladas CO₂ equivalente',
-      'Proceso de verificación Gold Standard internacional',
-      'Emisión de certificados digitales con serial único',
-      'Comercialización en mercados europeos y colombianos',
-      'Reporte de impacto ambiental y social anual'
-    ],
-    audience: 'Empresas con compromisos SBTi, corporaciones internacionales con metas net-zero, fondos de inversión ESG, y compradores voluntarios de créditos de carbono en Europa, Asia y Norteamérica.',
-    price: 'Desde USD 2,700',
-    priceSub: 'Paquetes: 100 · 300 · 600 · 3.151 tCO₂'
-  },
-  {
-    label: 'Responsabilidad Social Empresarial',
-    name: 'Compensación RSE',
-    img: 'https://images.unsplash.com/photo-1598335624134-5bceb5de202d?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Programa corporativo de adopción de árboles nativos certificados en la Orinoquia colombiana. Cada árbol tiene coordenadas GPS, especie botánica registrada y seguimiento anual — con certificado personalizado con el logo de su empresa para informes de sostenibilidad.',
-    includes: [
-      'Adopción de árboles nativos con serial único',
-      'Certificado digital personalizado con logo corporativo',
-      'Coordenadas GPS del árbol en campo real',
-      'Fotografía de siembra y seguimiento anual',
-      'Reporte de impacto para memorias de sostenibilidad',
-      'Placa de reconocimiento en el área del proyecto'
-    ],
-    audience: 'Empresas de cualquier sector con programas de RSE, multinacionales con metas ambientales corporativas, PYMEs que quieren demostrar compromiso ambiental verificable ante sus clientes.',
-    price: 'Desde USD 33/árbol',
-    priceSub: '€32 · COP 138,000 por árbol certificado'
-  },
-  {
-    label: 'Apicultura Nativa',
-    name: 'Meliponicultura',
-    img: 'https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Establecimiento y manejo de colonias de Melipona eburnea, la abeja nativa sin aguijón de los llanos orientales. Nuestro programa de 400 colmenas en Caño Juriepe integra polinización natural, producción de miel medicinal y conservación de la biodiversidad polinizadora de la Orinoquia.',
-    includes: [
-      'Instalación de colmenas tradicionales en madera nativa',
-      'Capacitación técnica en manejo de abejas sin aguijón',
-      'Seguimiento trimestral del estado de las colonias',
-      'Producción de miel medicinal de alta calidad',
-      'Servicios de polinización para cultivos aledaños',
-      'Rescate y relocalización de colonias silvestres'
-    ],
-    audience: 'Fincas y predios rurales en la Orinoquia, proyectos de restauración ecológica, comunidades rurales e indígenas de Arauca y Casanare, investigadores de biodiversidad y polinizadores.',
-    price: 'Desde USD 125/colmena',
-    priceSub: '€120 · COP 517,000 por colmena instalada'
-  },
-  {
-    label: 'Formación y Sensibilización',
-    name: 'Educación Ambiental',
-    img: 'https://images.unsplash.com/photo-1565792894736-eeced66760d7?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Talleres y programas educativos sobre conservación de ecosistemas, biodiversidad del Orinoco y adaptación al cambio climático. Diseñados para comunidades rurales, estudiantes y equipos corporativos con enfoque práctico, vivencial y adaptado al contexto llanero.',
-    includes: [
-      'Talleres presenciales de 4 a 8 horas en campo',
-      'Material didáctico visual adaptado al contexto llanero',
-      'Recorridos de campo por ecosistemas nativos',
-      'Certificados de participación individuales',
-      'Módulo de identificación de especies nativas del Orinoco',
-      'Programas anuales de seguimiento comunitario'
-    ],
-    audience: 'Colegios y universidades de Arauca, comunidades rurales y campesinas, empresas con programas de RSE ambiental, entidades gubernamentales y alcaldías municipales.',
-    price: 'Desde USD 400/taller',
-    priceSub: '€390 · COP 1.7M por taller de campo'
-  },
-  {
-    label: 'Turismo de Naturaleza',
-    name: 'Ecoturismo Científico',
-    img: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Recorridos científicos guiados por los ecosistemas restaurados de Caño Juriepe y la Orinoquia colombiana. Observación de fauna silvestre, flora nativa, morichales y avifauna del llano con biólogo especialista y enfoque de conservación.',
-    includes: [
-      'Guía especializado — biólogo o ingeniero ambiental',
-      'Observación de aves, mamíferos y reptiles del llano',
-      'Recorrido por morichales y bosques de galería',
-      'Visita al proyecto de meliponicultura en campo',
-      'Registro fotográfico del ecosistema visitado',
-      'Informe de especies de biodiversidad observadas'
-    ],
-    audience: 'Investigadores y académicos nacionales e internacionales, turistas de naturaleza, grupos universitarios, organizaciones ambientales y cooperantes europeos que visitan el proyecto Caño Juriepe.',
-    price: 'Desde USD 48/persona',
-    priceSub: '€47 · COP 207,000 por persona · grupos desde 4'
-  },
-  {
-    label: 'Asesoría Técnica Ambiental',
-    name: 'Consultoría Ambiental',
-    img: 'https://images.unsplash.com/photo-1726098206872-e0d859aa1e34?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Asesoría técnica especializada para el cumplimiento de la normatividad ambiental colombiana. Elaboración de Estudios de Impacto Ambiental (EIA) y Planes de Manejo Ambiental (PMA) con gestión completa ante CORPORINOQUIA y el Ministerio de Ambiente y Desarrollo Sostenible.',
-    includes: [
-      'Estudios de Impacto Ambiental (EIA) completos',
-      'Planes de Manejo Ambiental (PMA) operativos',
-      'Gestión de licencias ante CORPORINOQUIA y MADS',
-      'Inventarios de flora y fauna para permisos ambientales',
-      'Due diligence ambiental para proyectos de inversión',
-      'Asesoría en compensaciones ambientales obligatorias',
-      'Monitoreo de cumplimiento normativo continuo'
-    ],
-    audience: 'Empresas petroleras y gasíferas, proyectos agropecuarios e industriales, constructoras y desarrolladores, y entidades del Estado que operan en la Orinoquia colombiana.',
-    price: 'Desde USD 1,350/mes',
-    priceSub: '€1,300 · COP 5.75M — Flórez + Carvajal COPNIA'
-  },
-  {
-    label: 'Ciencia de Campo',
-    name: 'Investigación y Monitoreo de Biodiversidad',
-    img: 'https://images.unsplash.com/photo-1752110382999-15e510962691?auto=format&fit=crop&w=760&h=230&q=80',
-    desc: 'Inventarios científicos de flora y fauna, monitoreo de biodiversidad a largo plazo y análisis de carbono en biomasa. Aplicamos metodología IPCC con transectos de vegetación, puntos de conteo de aves, cámaras trampa y muestreo de suelos en la Orinoquia.',
-    includes: [
-      'Inventarios florísticos y faunísticos completos',
-      'Monitoreo de aves, mamíferos, reptiles y anfibios',
-      'Análisis de carbono en biomasa aérea y subterránea',
-      'Muestreo y análisis físico-químico de suelos',
-      'Reportes científicos con mapas SIG e infografías',
-      'Bases de datos de biodiversidad geo-referenciadas'
-    ],
-    audience: 'Universidades e institutos de investigación, organismos GEF/PNUD/EUROCLIMA+, entidades ambientales del Estado colombiano, certificadoras Gold Standard e instituciones científicas internacionales.',
-    price: 'Desde USD 2,700/año',
-    priceSub: '€2,600 · COP 11.5M por programa anual'
-  }
+  { label:'Restauración de Ecosistemas', name:'Restauración Ecológica', img:'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=760&h=230&q=80', desc:'Programa completo de restauración ecológica en ecosistemas degradados de la Orinoquia colombiana. Utilizamos 12 especies nativas seleccionadas científicamente para recuperar la cobertura vegetal, el suelo y la biodiversidad en áreas intervenidas.', includes:['Diagnóstico del suelo y estado del ecosistema','Selección de 12+ especies nativas del Orinoco','Siembra directa y transplante de plántulas','Control de erosión y compactación del suelo','Monitoreo de supervivencia y crecimiento','Reportes georeferenciados con coordenadas GPS','Cálculo de CO₂ capturado (metodología IPCC)'], audience:'Propietarios de predios rurales, empresas con obligaciones de compensación ambiental, entidades territoriales y organismos de cooperación internacional como EUROCLIMA+ y GEF/PNUD.', price:'Desde USD 3,200/ha', priceSub:'€3,100 · COP 13.8M por hectárea' },
+  { label:'Mercado de Carbono', name:'Bonos de Carbono Gold Standard', img:'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=760&h=230&q=80', desc:'Certificación y comercialización de créditos de carbono verificados bajo el estándar Gold Standard. La zona virgen de Caño Juriepe genera 39.4 tCO₂/ha — el máximo potencial de captura certificable en la región Orinoquia-Amazonia.', includes:['Medición de biomasa forestal (metodología IPCC)','Cálculo certificado de toneladas CO₂ equivalente','Proceso de verificación Gold Standard internacional','Emisión de certificados digitales con serial único','Comercialización en mercados europeos y colombianos','Reporte de impacto ambiental y social anual'], audience:'Empresas con compromisos SBTi, corporaciones internacionales con metas net-zero, fondos de inversión ESG, y compradores voluntarios de créditos de carbono en Europa, Asia y Norteamérica.', price:'Desde USD 2,700', priceSub:'Paquetes: 100 · 300 · 600 · 3.151 tCO₂' },
+  { label:'Responsabilidad Social Empresarial', name:'Compensación RSE', img:'https://images.unsplash.com/photo-1598335624134-5bceb5de202d?auto=format&fit=crop&w=760&h=230&q=80', desc:'Programa corporativo de adopción de árboles nativos certificados en la Orinoquia colombiana. Cada árbol tiene coordenadas GPS, especie botánica registrada y seguimiento anual — con certificado personalizado con el logo de su empresa.', includes:['Adopción de árboles nativos con serial único','Certificado digital personalizado con logo corporativo','Coordenadas GPS del árbol en campo real','Fotografía de siembra y seguimiento anual','Reporte de impacto para memorias de sostenibilidad','Placa de reconocimiento en el área del proyecto'], audience:'Empresas de cualquier sector con programas de RSE, multinacionales con metas ambientales corporativas, PYMEs que quieren demostrar compromiso ambiental verificable.', price:'Desde USD 33/árbol', priceSub:'€32 · COP 138,000 por árbol certificado' },
+  { label:'Apicultura Nativa', name:'Meliponicultura', img:'https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=760&h=230&q=80', desc:'Establecimiento y manejo de colonias de Melipona eburnea, la abeja nativa sin aguijón de los llanos orientales. Programa de 400 colmenas en Caño Juriepe para polinización natural, producción de miel medicinal y conservación de polinizadores.', includes:['Instalación de colmenas tradicionales en madera nativa','Capacitación técnica en manejo de abejas sin aguijón','Seguimiento trimestral del estado de las colonias','Producción de miel medicinal de alta calidad','Servicios de polinización para cultivos aledaños','Rescate y relocalización de colonias silvestres'], audience:'Fincas y predios rurales en la Orinoquia, proyectos de restauración ecológica, comunidades rurales e indígenas de Arauca y Casanare, investigadores de biodiversidad.', price:'Desde USD 125/colmena', priceSub:'€120 · COP 517,000 por colmena instalada' },
+  { label:'Formación y Sensibilización', name:'Educación Ambiental', img:'https://images.unsplash.com/photo-1565792894736-eeced66760d7?auto=format&fit=crop&w=760&h=230&q=80', desc:'Talleres y programas educativos sobre conservación de ecosistemas, biodiversidad del Orinoco y adaptación al cambio climático. Diseñados para comunidades rurales, estudiantes y equipos corporativos con enfoque práctico y vivencial.', includes:['Talleres presenciales de 4 a 8 horas en campo','Material didáctico visual adaptado al contexto llanero','Recorridos de campo por ecosistemas nativos','Certificados de participación individuales','Módulo de identificación de especies nativas del Orinoco','Programas anuales de seguimiento comunitario'], audience:'Colegios y universidades de Arauca, comunidades rurales y campesinas, empresas con programas de RSE ambiental, entidades gubernamentales y alcaldías municipales.', price:'Desde USD 400/taller', priceSub:'€390 · COP 1.7M por taller de campo' },
+  { label:'Turismo de Naturaleza', name:'Ecoturismo Científico', img:'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=760&h=230&q=80', desc:'Recorridos científicos guiados por los ecosistemas restaurados de Caño Juriepe y la Orinoquia colombiana. Observación de fauna silvestre, flora nativa, morichales y avifauna del llano con biólogo especialista.', includes:['Guía especializado — biólogo o ingeniero ambiental','Observación de aves, mamíferos y reptiles del llano','Recorrido por morichales y bosques de galería','Visita al proyecto de meliponicultura en campo','Registro fotográfico del ecosistema visitado','Informe de especies de biodiversidad observadas'], audience:'Investigadores y académicos nacionales e internacionales, turistas de naturaleza, grupos universitarios, organizaciones ambientales y cooperantes europeos que visitan el proyecto.', price:'Desde USD 48/persona', priceSub:'€47 · COP 207,000 por persona · grupos desde 4' },
+  { label:'Asesoría Técnica Ambiental', name:'Consultoría Ambiental', img:'https://images.unsplash.com/photo-1726098206872-e0d859aa1e34?auto=format&fit=crop&w=760&h=230&q=80', desc:'Asesoría técnica especializada para el cumplimiento de la normatividad ambiental colombiana. Elaboración de EIA y PMA con gestión completa ante CORPORINOQUIA y el Ministerio de Ambiente y Desarrollo Sostenible.', includes:['Estudios de Impacto Ambiental (EIA) completos','Planes de Manejo Ambiental (PMA) operativos','Gestión de licencias ante CORPORINOQUIA y MADS','Inventarios de flora y fauna para permisos ambientales','Due diligence ambiental para proyectos de inversión','Asesoría en compensaciones ambientales obligatorias','Monitoreo de cumplimiento normativo continuo'], audience:'Empresas petroleras y gasíferas, proyectos agropecuarios e industriales, constructoras y desarrolladores, y entidades del Estado en la Orinoquia colombiana.', price:'Desde USD 1,350/mes', priceSub:'€1,300 · COP 5.75M — Flórez + Carvajal COPNIA' },
+  { label:'Ciencia de Campo', name:'Investigación y Monitoreo de Biodiversidad', img:'https://images.unsplash.com/photo-1752110382999-15e510962691?auto=format&fit=crop&w=760&h=230&q=80', desc:'Inventarios científicos de flora y fauna, monitoreo de biodiversidad a largo plazo y análisis de carbono en biomasa. Aplicamos metodología IPCC con transectos de vegetación, puntos de conteo de aves, cámaras trampa y muestreo de suelos.', includes:['Inventarios florísticos y faunísticos completos','Monitoreo de aves, mamíferos, reptiles y anfibios','Análisis de carbono en biomasa aérea y subterránea','Muestreo y análisis físico-químico de suelos','Reportes científicos con mapas SIG e infografías','Bases de datos de biodiversidad geo-referenciadas'], audience:'Universidades e institutos de investigación, organismos GEF/PNUD/EUROCLIMA+, entidades ambientales del Estado colombiano y certificadoras Gold Standard.', price:'Desde USD 2,700/año', priceSub:'€2,600 · COP 11.5M por programa anual' }
 ];
 
-const modalOverlay = document.getElementById('svcModal');
+const modalOverlay  = document.getElementById('svcModal');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
-const modalCtaBtn = document.getElementById('modalCtaBtn');
+const modalCtaBtn   = document.getElementById('modalCtaBtn');
 
 function openModal(idx) {
   const d = svcData[idx];
-  document.getElementById('modalImg').src = d.img;
-  document.getElementById('modalImg').alt = d.name;
+  document.getElementById('modalImg').src         = d.img;
+  document.getElementById('modalImg').alt         = d.name;
   document.getElementById('modalHeroLabel').textContent = d.label;
-  document.getElementById('modalTitle').textContent = d.name;
-  document.getElementById('modalDesc').textContent = d.desc;
-  document.getElementById('modalIncludes').innerHTML = d.includes.map(i => `<li>${i}</li>`).join('');
-  document.getElementById('modalAudience').textContent = d.audience;
-  document.getElementById('modalPriceVal').textContent = d.price;
-  document.getElementById('modalPriceSub').textContent = d.priceSub;
+  document.getElementById('modalTitle').textContent     = d.name;
+  document.getElementById('modalDesc').textContent      = d.desc;
+  document.getElementById('modalIncludes').innerHTML    = d.includes.map(i => `<li>${i}</li>`).join('');
+  document.getElementById('modalAudience').textContent  = d.audience;
+  document.getElementById('modalPriceVal').textContent  = d.price;
+  document.getElementById('modalPriceSub').textContent  = d.priceSub;
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -387,13 +370,10 @@ function closeModal() {
 }
 
 document.querySelectorAll('.service-card').forEach((card, idx) => {
-  card.addEventListener('click', (e) => {
-    if (e.target.closest('a[href]')) return;
-    openModal(idx);
-  });
+  card.addEventListener('click', e => { if (e.target.closest('a[href]')) return; openModal(idx); });
 });
 
 modalCloseBtn.addEventListener('click', closeModal);
 modalCtaBtn.addEventListener('click', closeModal);
-modalOverlay.addEventListener('click', (e) => { if (e.target === modalOverlay) closeModal(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
