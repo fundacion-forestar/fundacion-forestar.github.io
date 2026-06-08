@@ -19,14 +19,14 @@ const t = {
     'nav-calc':'Calculadora','nav-carbon':'Bonos CO₂','nav-team':'Equipo','nav-contact':'Contacto','nav-cta':'Contáctanos',
     'hero-badge':'🌿 Restauración Ecológica — Orinoquia Colombia',
     'hero-title-1':'Restauramos','hero-title-2':'bosques','hero-title-3':'generamos futuro sostenible',
-    'hero-subtitle':'Fundación sin ánimo de lucro líder en restauración ecológica, bonos de carbono certificados y conservación de la biodiversidad en la Orinoquia y Amazonia colombiana.',
+    'hero-subtitle':'Fundación sin ánimo de lucro líder en restauración ecológica, bonos de carbono en proceso de certificación Gold Standard y conservación de la biodiversidad en la Orinoquia y Amazonia colombiana.',
     'hero-btn1':'🌱 Ver bonos de carbono','hero-btn2':'Nuestro proyecto',
     'stat1-num':'80.000','stat1-label':'Árboles nativos','stat2-num':'3.151','stat2-label':'tCO₂ certificables',
     'stat3-num':'80 ha','stat3-label':'En restauración','stat4-num':'2018','stat4-label':'Fundada',
     'bstat1-num':'80.000','bstat1-label':'Árboles','bstat2-num':'3.151 tCO₂','bstat2-label':'Certificables','bstat3-num':'€548K','bstat3-label':'Financiación UE',
     'about-label':'Quiénes somos','about-title-1':'Lideramos la restauración de la','about-title-2':'Orinoquia',
     'about-desc':'Desde 2018, Fundación Forestar trabaja en la restauración ecológica de ecosistemas degradados en Colombia, combinando ciencia, tecnología y comunidades locales para crear impacto ambiental duradero.',
-    'feat1-title':'Certificación Gold Standard','feat1-desc':'Bonos de carbono verificados con los más altos estándares internacionales',
+    'feat1-title':'En proceso de certificación Gold Standard','feat1-desc':'Bonos de carbono estructurados conforme a los más altos estándares internacionales de medición y verificación',
     'feat2-title':'Cooperación Internacional','feat2-desc':'Proyectos financiados por EUROCLIMA+, GEF/PNUD y Unión Europea',
     'feat3-title':'Biodiversidad y Comunidades','feat3-desc':'400 colmenas de meliponicultura con abejas nativas sin aguijón',
     'feat4-title':'Ciencia e Innovación','feat4-desc':'Monitoreo con metodología IPCC: 39.4 tCO₂/ha en zona virgen',
@@ -51,7 +51,10 @@ const t = {
     'calc-desc':'Calcula tu huella de carbono en menos de un minuto y descubre cuántos bonos Gold Standard necesitas para ser carbono neutro.',
     'calc-emp-label':'Empleados en la empresa','calc-elec-label':'Electricidad mensual (kWh)',
     'calc-estimate':'Estimar','calc-elec-hint':'Si no tienes el dato, haz clic en "Estimar" para usar un promedio por empleado.',
-    'calc-int-flights':'Vuelos internacionales/año','calc-nac-flights':'Vuelos nacionales/año','calc-vehicles':'Vehículos empresa',
+    'calc-grid-label':'Red eléctrica de tu país','calc-grid-hint':'Factores de intensidad de red según la European Environment Agency (EEA) — selecciona el país donde tu empresa consume electricidad para un cálculo más preciso.',
+    'grid-eu':'Promedio Unión Europea — EEA (0.23 kg CO₂/kWh)','grid-co':'Colombia — SIN (0.164 kg CO₂/kWh)','grid-fr':'Francia (0.06 kg CO₂/kWh)','grid-es':'España (0.17 kg CO₂/kWh)','grid-it':'Italia (0.23 kg CO₂/kWh)','grid-de':'Alemania (0.38 kg CO₂/kWh)','grid-pl':'Polonia (0.64 kg CO₂/kWh)',
+    'calc-flights-short':'Vuelos de corta distancia/año (<1.500 km)','calc-flights-long':'Vuelos de larga distancia/año (>1.500 km)','calc-vehicles':'Vehículos empresa',
+    'calc-source-note':'Cálculo basado en factores de emisión de la European Environment Agency (EEA) y el GHG Protocol — referencia útil para reportes CSRD/ESRS E1 y compromisos SBTi.',
     'calc-cta-btn':'🌱 Calcular mi huella de carbono',
     'calc-result-lbl':'Tu huella de carbono anual','calc-breakdown':'Desglose de emisiones',
     'calc-b-elec':'Electricidad','calc-b-vuelos':'Vuelos','calc-b-vehs':'Vehículos','calc-b-oficina':'Oficina',
@@ -59,7 +62,7 @@ const t = {
     'calc-placeholder':'Completa los datos de tu empresa y haz clic en "Calcular" para ver tu huella de carbono y el paquete de bonos recomendado.',
     'carbon-label':'Mercado de Carbono','carbon-title-1':'Bonos de Carbono','carbon-title-2':'Gold Standard',
     'carbon-desc':'Proyecto en proceso de certificación bajo el estándar internacional Gold Standard, con metodología de medición IPCC. Zona virgen con 39.4 tCO₂/ha — máximo potencial de captura.',
-    'carbon-badge-sub':'Certificación internacional',
+    'carbon-badge-sub':'En proceso de certificación internacional',
     'pkg1-name':'Moriche','pkg1-tons':'100 toneladas CO₂','pkg1-per':'USD 27 / tCO₂',
     'pkg2-name':'Caño','pkg2-tons':'300 toneladas CO₂','pkg2-per':'USD 23 / tCO₂',
     'pkg3-name':'Sabana','pkg3-tons':'600 toneladas CO₂','pkg3-per':'USD 20 / tCO₂',
@@ -85,7 +88,7 @@ const t = {
     'tm3-role':'Vicepresidenta y Rep. Legal Suplente','tm4-role':'Coordinador de Proyectos',
     'tm5-role':'Biólogo Especialista','tm6-role':'Ingeniero Ambiental',
     'contact-label':'Contacto','contact-title-1':'Hablemos sobre el','contact-title-2':'futuro',
-    'contact-desc':'Ya sea que busques compensar huella de carbono, invertir en bonos certificados o colaborar en proyectos de restauración, estamos listos para crear una propuesta a tu medida.',
+    'contact-desc':'Ya sea que busques compensar tu huella de carbono, invertir en bonos en proceso de certificación Gold Standard o colaborar en proyectos de restauración, estamos listos para crear una propuesta a tu medida.',
     'ci1-title':'Correo principal','ci2-title':'Relaciones Internacionales',
     'ci3-title':'Colombia','ci4-title':'Redes sociales','ci5-title':'Datos legales',
     'ci5-founded':'Fundada: 12 octubre 2018',
@@ -108,14 +111,14 @@ const t = {
     'nav-calc':'Calculator','nav-carbon':'Carbon Bonds','nav-team':'Team','nav-contact':'Contact','nav-cta':'Contact us',
     'hero-badge':'🌿 Ecological Restoration — Orinoquía Colombia',
     'hero-title-1':'We restore','hero-title-2':'forests','hero-title-3':'building a sustainable future',
-    'hero-subtitle':'Non-profit foundation leading ecological restoration, certified carbon bonds, and biodiversity conservation in the Colombian Orinoquía and Amazonia.',
+    'hero-subtitle':'Non-profit foundation leading ecological restoration, carbon bonds currently undergoing Gold Standard certification, and biodiversity conservation in the Colombian Orinoquía and Amazonia.',
     'hero-btn1':'🌱 View carbon bonds','hero-btn2':'Our project',
     'stat1-num':'80,000','stat1-label':'Native trees','stat2-num':'3,151','stat2-label':'tCO₂ certifiable',
     'stat3-num':'80 ha','stat3-label':'Under restoration','stat4-num':'2018','stat4-label':'Founded',
     'bstat1-num':'80,000','bstat1-label':'Trees','bstat2-num':'3,151 tCO₂','bstat2-label':'Certifiable','bstat3-num':'€548K','bstat3-label':'EU Funding',
     'about-label':'About us','about-title-1':'We lead the restoration of the','about-title-2':'Orinoquía',
     'about-desc':'Since 2018, Fundación Forestar works in the ecological restoration of degraded ecosystems in Colombia, combining science, technology, and local communities to create lasting environmental impact.',
-    'feat1-title':'Gold Standard Certification','feat1-desc':'Carbon bonds verified with the highest international standards',
+    'feat1-title':'Gold Standard Certification In Progress','feat1-desc':'Carbon bonds structured under the highest international measurement and verification standards',
     'feat2-title':'International Cooperation','feat2-desc':'Projects funded by EUROCLIMA+, GEF/UNDP, and the European Union',
     'feat3-title':'Biodiversity & Communities','feat3-desc':'400 stingless native bee hives (meliponiculture)',
     'feat4-title':'Science & Innovation','feat4-desc':'IPCC methodology monitoring: 39.4 tCO₂/ha in virgin zone',
@@ -140,7 +143,10 @@ const t = {
     'calc-desc':'Calculate your carbon footprint in under a minute and find out how many Gold Standard bonds you need to become carbon neutral.',
     'calc-emp-label':'Company employees','calc-elec-label':'Monthly electricity (kWh)',
     'calc-estimate':'Estimate','calc-elec-hint':'If you don\'t have the figure, click "Estimate" to use an average per employee.',
-    'calc-int-flights':'International flights/year','calc-nac-flights':'Domestic flights/year','calc-vehicles':'Company vehicles',
+    'calc-grid-label':'Your country\'s electricity grid','calc-grid-hint':'Grid intensity factors from the European Environment Agency (EEA) — select the country where your company consumes electricity for a more precise calculation.',
+    'grid-eu':'European Union average — EEA (0.23 kg CO₂/kWh)','grid-co':'Colombia — SIN (0.164 kg CO₂/kWh)','grid-fr':'France (0.06 kg CO₂/kWh)','grid-es':'Spain (0.17 kg CO₂/kWh)','grid-it':'Italy (0.23 kg CO₂/kWh)','grid-de':'Germany (0.38 kg CO₂/kWh)','grid-pl':'Poland (0.64 kg CO₂/kWh)',
+    'calc-flights-short':'Short-haul flights/year (<1,500 km)','calc-flights-long':'Long-haul flights/year (>1,500 km)','calc-vehicles':'Company vehicles',
+    'calc-source-note':'Calculation based on emission factors from the European Environment Agency (EEA) and the GHG Protocol — a useful reference for CSRD/ESRS E1 reporting and SBTi commitments.',
     'calc-cta-btn':'🌱 Calculate my carbon footprint',
     'calc-result-lbl':'Your annual carbon footprint','calc-breakdown':'Emissions breakdown',
     'calc-b-elec':'Electricity','calc-b-vuelos':'Flights','calc-b-vehs':'Vehicles','calc-b-oficina':'Office',
@@ -148,7 +154,7 @@ const t = {
     'calc-placeholder':'Fill in your company data and click "Calculate" to see your carbon footprint and the recommended bonds package.',
     'carbon-label':'Carbon Market','carbon-title-1':'Carbon Bonds','carbon-title-2':'Gold Standard',
     'carbon-desc':'Project currently undergoing certification under the international Gold Standard, using IPCC measurement methodology. Virgin zone with 39.4 tCO₂/ha — maximum sequestration potential.',
-    'carbon-badge-sub':'International certification',
+    'carbon-badge-sub':'International certification in progress',
     'pkg1-name':'Moriche','pkg1-tons':'100 tonnes CO₂','pkg1-per':'USD 27 / tCO₂',
     'pkg2-name':'Caño','pkg2-tons':'300 tonnes CO₂','pkg2-per':'USD 23 / tCO₂',
     'pkg3-name':'Sabana','pkg3-tons':'600 tonnes CO₂','pkg3-per':'USD 20 / tCO₂',
@@ -174,7 +180,7 @@ const t = {
     'tm3-role':'Vice-President & Deputy Legal Representative','tm4-role':'Project Coordinator',
     'tm5-role':'Specialist Biologist','tm6-role':'Environmental Engineer',
     'contact-label':'Contact','contact-title-1':"Let's talk about the",'contact-title-2':'future',
-    'contact-desc':"Whether you want to offset your carbon footprint, invest in certified bonds, or collaborate in restoration projects, we're ready to create a proposal tailored to your needs.",
+    'contact-desc':"Whether you want to offset your carbon footprint, invest in bonds currently undergoing Gold Standard certification, or collaborate in restoration projects, we're ready to create a proposal tailored to your needs.",
     'ci1-title':'Main email','ci2-title':'International Relations',
     'ci3-title':'Colombia','ci4-title':'Social media','ci5-title':'Legal info',
     'ci5-founded':'Founded: October 12, 2018',
@@ -240,14 +246,16 @@ function changeCount(id, delta) {
 }
 
 function calcularHuella() {
-  const empleados = parseInt(cEmpSlider.value) || 0;
-  const elecMes   = parseFloat(document.getElementById('cElec').value) || (empleados * 180);
-  const vInt  = parseInt(document.getElementById('cVInt').textContent)  || 0;
-  const vNac  = parseInt(document.getElementById('cVNac').textContent)  || 0;
-  const vehs  = parseInt(document.getElementById('cVehs').textContent)  || 0;
+  const empleados  = parseInt(cEmpSlider.value) || 0;
+  const elecMes    = parseFloat(document.getElementById('cElec').value) || (empleados * 180);
+  const gridFactor = parseFloat(document.getElementById('cGrid').value) || 0.23;
+  const vShort = parseInt(document.getElementById('cVShort').textContent) || 0;
+  const vLong  = parseInt(document.getElementById('cVLong').textContent)  || 0;
+  const vehs   = parseInt(document.getElementById('cVehs').textContent)   || 0;
 
-  const eElec   = (elecMes * 12 * 0.136) / 1000;
-  const eVuelos = vInt * 1.8 + vNac * 0.25;
+  // Factores de emisión: red eléctrica (EEA, seleccionable por país) y vuelos por banda de distancia (EEA/GHG Protocol)
+  const eElec   = (elecMes * 12 * gridFactor) / 1000;
+  const eVuelos = vShort * 0.20 + vLong * 1.5;
   const eVehs   = vehs * 3.5;
   const eOfic   = empleados * 0.5;
   const total   = eElec + eVuelos + eVehs + eOfic;
