@@ -15,7 +15,7 @@ const langLabel = { es: 'EN', en: 'ES' };
 
 const t = {
   es: {
-    'nav-about':'Quiénes somos','nav-services':'Servicios','nav-species':'Especies','nav-project':'Proyecto',
+    'nav-about':'Quiénes somos','nav-services':'Servicios','nav-species':'Especies','nav-project':'Proyecto','nav-progress':'Avances',
     'nav-calc':'Calculadora','nav-carbon':'Bonos CO₂','nav-team':'Equipo','nav-contact':'Contacto','nav-cta':'Contáctanos',
     'hero-badge':'🌿 Restauración Ecológica — Orinoquia Colombia',
     'hero-title-1':'Restauramos','hero-title-2':'bosques','hero-title-3':'generamos futuro sostenible',
@@ -47,6 +47,13 @@ const t = {
     'project-desc':'Restauración ecológica en 80 hectáreas vírgenes de la Orinoquia colombiana, con financiación EUROCLIMA+ de la Unión Europea. Un proyecto modelo para certificación Gold Standard.',
     'pstat1':'Árboles nativos','pstat2':'Colmenas Melipona','pstat3':'tCO₂ neto certificable','pstat4':'Presupuesto total',
     'map-title':'📍 Ubicación del proyecto',
+    'progress-label':'Actividad Reciente','progress-title-1':'Avances del','progress-title-2':'proyecto',
+    'progress-desc':'Pasos concretos que hemos dado en 2026 para llevar Caño Juriepe hacia la certificación y consolidar la fundación institucionalmente.',
+    'prog1-date':'Mayo 2026','prog1-title':'Contrato de comodato firmado','prog1-desc':'Se formalizó el comodato de 150 hectáreas en la Vereda La Esperanza, Cravo Norte, ampliando el área de restauración del proyecto Caño Juriepe.',
+    'prog2-date':'Mayo 2026','prog2-title':'Registros legales actualizados','prog2-desc':'Renovamos el RUT y el Certificado de Cámara de Comercio de Arauca, y completamos el registro PADOR ante la Unión Europea para habilitar a la fundación como socia elegible en convocatorias europeas.',
+    'prog3-date':'Junio 2026','prog3-title':'Propuesta radicada ante el PPD Colombia (GEF/PNUD)','prog3-desc':'Presentamos la propuesta del proyecto Caño Juriepe al Programa de Pequeñas Donaciones del Fondo para el Medio Ambiente Mundial, en articulación con PNUD Colombia.',
+    'prog4-date':'Junio 2026','prog4-title':'Articulación con CORPORINOQUIA','prog4-desc':'La autoridad ambiental regional solicitó el resumen ejecutivo del proyecto como parte del proceso de acompañamiento institucional.',
+    'prog5-date':'Septiembre 2026','prog5-title':'Nuevas propuestas a la Secretaría de Agricultura de Arauca','prog5-desc':'Presentamos tres propuestas para seguridad alimentaria y acceso a agua en siete municipios del departamento de Arauca.',
     'calc-label':'Calculadora Ambiental','calc-title-1':'¿Cuánto CO₂','calc-title-2':'emite tu empresa?',
     'calc-desc':'Calcula tu huella de carbono en menos de un minuto y descubre cuántos bonos Gold Standard necesitas para ser carbono neutro.',
     'calc-emp-label':'Empleados en la empresa','calc-elec-label':'Electricidad mensual (kWh)',
@@ -107,7 +114,7 @@ const t = {
     'modal-invest':'Inversión','modal-request':'🌿 Solicitar información'
   },
   en: {
-    'nav-about':'About us','nav-services':'Services','nav-species':'Species','nav-project':'Project',
+    'nav-about':'About us','nav-services':'Services','nav-species':'Species','nav-project':'Project','nav-progress':'Progress',
     'nav-calc':'Calculator','nav-carbon':'Carbon Bonds','nav-team':'Team','nav-contact':'Contact','nav-cta':'Contact us',
     'hero-badge':'🌿 Ecological Restoration — Orinoquía Colombia',
     'hero-title-1':'We restore','hero-title-2':'forests','hero-title-3':'building a sustainable future',
@@ -139,6 +146,13 @@ const t = {
     'project-desc':'Ecological restoration on 80 virgin hectares of the Colombian Orinoquía, with EUROCLIMA+ funding from the European Union. A model project for Gold Standard certification.',
     'pstat1':'Native trees','pstat2':'Melipona hives','pstat3':'net tCO₂ certifiable','pstat4':'Total budget',
     'map-title':'📍 Project location',
+    'progress-label':'Recent Activity','progress-title-1':'Project','progress-title-2':'progress',
+    'progress-desc':'Concrete steps we took in 2026 to move Caño Juriepe toward certification and strengthen the foundation institutionally.',
+    'prog1-date':'May 2026','prog1-title':'Land-use agreement signed','prog1-desc':'We formalized the 150-hectare land-use agreement in Vereda La Esperanza, Cravo Norte, expanding the restoration area of the Caño Juriepe project.',
+    'prog2-date':'May 2026','prog2-title':'Legal registrations updated','prog2-desc':'We renewed the tax ID (RUT) and the Arauca Chamber of Commerce Certificate, and completed the PADOR registration with the European Union to qualify the foundation as an eligible partner in European calls for proposals.',
+    'prog3-date':'June 2026','prog3-title':'Proposal submitted to PPD Colombia (GEF/UNDP)','prog3-desc':'We submitted the Caño Juriepe project proposal to the Global Environment Facility Small Grants Programme, in coordination with UNDP Colombia.',
+    'prog4-date':'June 2026','prog4-title':'Coordination with CORPORINOQUIA','prog4-desc':'The regional environmental authority requested the project executive summary as part of the institutional support process.',
+    'prog5-date':'September 2026','prog5-title':'New proposals to the Arauca Department Agriculture Secretariat','prog5-desc':'We submitted three proposals for food security and water access in seven municipalities of the Arauca department.',
     'calc-label':'Environmental Calculator','calc-title-1':'How much CO₂','calc-title-2':'does your company emit?',
     'calc-desc':'Calculate your carbon footprint in under a minute and find out how many Gold Standard bonds you need to become carbon neutral.',
     'calc-emp-label':'Company employees','calc-elec-label':'Monthly electricity (kWh)',
