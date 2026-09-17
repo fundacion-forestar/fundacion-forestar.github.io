@@ -220,14 +220,36 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-document.getElementById('contactForm').addEventListener('submit', e => {
+document.getElementById('contactForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const btn = e.target.querySelector('.btn-submit');
+  const form = e.target;
+  const btn = form.querySelector('.btn-submit');
+  const status = document.getElementById('formStatus');
   const orig = btn.textContent;
-  btn.textContent = lang === 'es' ? '✅ ¡Mensaje enviado!' : '✅ Message sent!';
-  btn.style.background = '#4a8c4a';
   btn.disabled = true;
-  setTimeout(() => { e.target.reset(); btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 3500);
+  btn.textContent = lang === 'es' ? 'Enviando…' : 'Sending…';
+  if (status) { status.textContent = ''; status.style.color = ''; }
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    });
+    if (!res.ok) throw new Error('bad status: ' + res.status);
+    btn.textContent = lang === 'es' ? '✅ ¡Mensaje enviado!' : '✅ Message sent!';
+    btn.style.background = '#4a8c4a';
+    setTimeout(() => { form.reset(); btn.textContent = orig; btn.style.background = ''; btn.disabled = false; }, 3500);
+  } catch (err) {
+    btn.textContent = orig;
+    btn.style.background = '';
+    btn.disabled = false;
+    if (status) {
+      status.style.color = '#c0392b';
+      status.textContent = lang === 'es'
+        ? '⚠️ No se pudo enviar. Escríbenos directo a fundacionforestar03@gmail.com o por WhatsApp.'
+        : '⚠️ Could not send. Please email fundacionforestar03@gmail.com or WhatsApp us directly.';
+    }
+  }
 });
 
 /* ===== CALCULADORA DE HUELLA DE CARBONO ===== */
