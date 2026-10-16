@@ -261,10 +261,13 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
   btn.textContent = lang === 'es' ? 'Enviando…' : 'Sending…';
   if (status) { status.textContent = ''; status.style.color = ''; }
   try {
+    const data = new FormData(form);
+    // Copia de las consultas de bonos de carbono a Relaciones Internacionales
+    if (data.get('interes') === 'carbon') data.append('_cc', 'camilomagurno12@gmail.com');
     const res = await fetch(form.action, {
       method: 'POST',
       headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
+      body: data
     });
     if (!res.ok) throw new Error('bad status: ' + res.status);
     btn.textContent = lang === 'es' ? '✅ ¡Mensaje enviado!' : '✅ Message sent!';
