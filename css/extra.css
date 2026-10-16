@@ -35,6 +35,10 @@
 .cookie-btn-ess { background: transparent; border: 1.5px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.65); font-family: 'Montserrat',sans-serif; font-weight: 600; font-size: 0.8rem; padding: 0.6rem 1.2rem; border-radius: 20px; cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
 .cookie-btn-ess:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
 .cookie-btn-acc { background: #2d6a2d; border: none; color: #fff; font-family: 'Montserrat',sans-serif; font-weight: 700; font-size: 0.8rem; padding: 0.6rem 1.4rem; border-radius: 20px; cursor: pointer; transition: all 0.2s ease; white-space: nowrap; }
+.form-consent { display: flex; align-items: flex-start; gap: 0.6rem; margin: 0.2rem 0 1.1rem; font-size: 0.8rem; line-height: 1.5; color: rgba(255,255,255,0.7); }
+.form-consent input { width: auto; margin-top: 0.2rem; accent-color: #c8a427; flex-shrink: 0; }
+.form-consent a { color: #e8b84b; }
+.footer-nit a { color: inherit; text-decoration: underline; }
 .cookie-btn-acc:hover { background: #4a8c4a; transform: translateY(-1px); }
 @media (max-width: 600px) {
   .cookie-inner { flex-direction: column; gap: 1rem; }
