@@ -113,14 +113,15 @@ const t = {
     'form-title':'Envíanos un mensaje','form-name':'Nombre completo','form-org':'Empresa / Organización',
     'form-email':'Correo electrónico','form-phone':'Teléfono (opcional)',
     'form-interest':'Área de interés','form-message':'Mensaje','form-submit':'🌿 Enviar mensaje',
+    'form-consent':'Autorizo a Fundación Forestar a tratar mis datos personales para responder a mi mensaje, según su','form-consent-link':'Política de Tratamiento de Datos',
     'int-select':'Seleccionar...','int-carbon':'Bonos de carbono','int-restoration':'Restauración ecológica',
     'int-rse':'Compensación RSE','int-bees':'Meliponicultura','int-consulting':'Consultoría ambiental','int-other':'Otro',
     'footer-desc':'Fundación sin ánimo de lucro dedicada a la restauración ecológica, bonos de carbono y conservación de biodiversidad en la Orinoquia colombiana.',
-    'footer-services':'Servicios','footer-contact':'Contacto',
+    'footer-services':'Servicios','footer-contact':'Contacto','footer-privacy':'Política de privacidad',
     'footer-copy':'© 2026 Fundación Forestar — Todos los derechos reservados',
-    'cookie-title':'🍪 Este sitio usa cookies',
-    'cookie-text':'Usamos cookies esenciales para el funcionamiento del sitio. Respetamos tu privacidad conforme al RGPD/GDPR.',
-    'cookie-ess':'Solo esenciales','cookie-acc':'Aceptar todas',
+    'cookie-title':'🍪 Sin cookies de seguimiento',
+    'cookie-text':'Este sitio no usa cookies de publicidad ni analítica. Solo recordamos en tu navegador que ya viste este aviso.',
+    'cookie-link':'Política de privacidad','cookie-acc':'Entendido',
     'modal-includes-title':'¿Qué incluye?','modal-audience-title':'Dirigido a',
     'modal-invest':'Inversión','modal-request':'🌿 Solicitar información'
   },
@@ -218,14 +219,15 @@ const t = {
     'form-title':'Send us a message','form-name':'Full name','form-org':'Company / Organization',
     'form-email':'Email address','form-phone':'Phone (optional)',
     'form-interest':'Area of interest','form-message':'Message','form-submit':'🌿 Send message',
+    'form-consent':'I authorize Fundación Forestar to process my personal data to answer my message, under its','form-consent-link':'Personal Data Policy',
     'int-select':'Select...','int-carbon':'Carbon credits','int-restoration':'Ecological restoration',
     'int-rse':'CSR compensation','int-bees':'Meliponiculture','int-consulting':'Environmental consulting','int-other':'Other',
     'footer-desc':'Non-profit foundation dedicated to ecological restoration, carbon credits, and biodiversity conservation in the Colombian Orinoquía.',
-    'footer-services':'Services','footer-contact':'Contact',
+    'footer-services':'Services','footer-contact':'Contact','footer-privacy':'Privacy policy',
     'footer-copy':'© 2026 Fundación Forestar — All rights reserved',
-    'cookie-title':'🍪 This site uses cookies',
-    'cookie-text':'We use essential cookies for site functionality. We respect your privacy in accordance with GDPR.',
-    'cookie-ess':'Essential only','cookie-acc':'Accept all',
+    'cookie-title':'🍪 No tracking cookies',
+    'cookie-text':'This site uses no advertising or analytics cookies. We only remember in your browser that you have seen this notice.',
+    'cookie-link':'Privacy policy','cookie-acc':'Got it',
     'modal-includes-title':'What does it include?','modal-audience-title':'Aimed at',
     'modal-invest':'Investment','modal-request':'🌿 Request information'
   }
@@ -447,11 +449,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     setTimeout(() => banner.classList.add('show'), 1800);
   }
   document.getElementById('cookieAccept').addEventListener('click', () => {
-    localStorage.setItem(KEY, 'all');
-    banner.classList.remove('show');
-  });
-  document.getElementById('cookieEssential').addEventListener('click', () => {
-    localStorage.setItem(KEY, 'essential');
+    localStorage.setItem(KEY, 'seen');
     banner.classList.remove('show');
   });
 })();

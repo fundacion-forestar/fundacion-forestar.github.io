@@ -522,6 +522,7 @@
                 </div>
                 <div class="form-group"><label data-i18n="form-interest">Área de interés</label><select name="interes"><option value="" data-i18n="int-select">Seleccionar...</option><option value="carbon" data-i18n="int-carbon">Bonos de carbono</option><option value="restoration" data-i18n="int-restoration">Restauración ecológica</option><option value="rse" data-i18n="int-rse">Compensación RSE</option><option value="bees" data-i18n="int-bees">Meliponicultura</option><option value="consulting" data-i18n="int-consulting">Consultoría ambiental</option><option value="other" data-i18n="int-other">Otro</option></select></div>
                 <div class="form-group"><label data-i18n="form-message">Mensaje</label><textarea name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea></div>
+                <div class="form-consent"><input type="checkbox" id="consentDatos" name="autorizacion_datos" value="Si" required><label for="consentDatos"><span data-i18n="form-consent">Autorizo a Fundación Forestar a tratar mis datos personales para responder a mi mensaje, según su</span> <a href="privacidad.html" target="_blank" rel="noopener" data-i18n="form-consent-link">Política de Tratamiento de Datos</a>.</label></div>
                 <button type="submit" class="btn-submit" data-i18n="form-submit">🌿 Enviar mensaje</button>
                 <div class="form-status" id="formStatus" style="margin-top:10px;font-size:14px"></div>
             </form>
@@ -568,7 +569,7 @@
         </div>
         <div class="footer-bottom">
             <span data-i18n="footer-copy">© 2026 Fundación Forestar — Todos los derechos reservados</span>
-            <span class="footer-nit">NIT 901223416-6 · Cravo Norte, Arauca, Colombia</span>
+            <span class="footer-nit">NIT 901223416-6 · Cravo Norte, Arauca, Colombia · <a href="privacidad.html" data-i18n="footer-privacy">Política de privacidad</a></span>
         </div>
     </div>
 </footer>
@@ -601,12 +602,11 @@
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Aviso de cookies">
     <div class="cookie-inner">
         <div class="cookie-text">
-            <strong data-i18n="cookie-title">🍪 Este sitio usa cookies</strong>
-            <p data-i18n="cookie-text">Usamos cookies esenciales para el funcionamiento del sitio. Respetamos tu privacidad conforme al RGPD/GDPR.</p>
+            <strong data-i18n="cookie-title">🍪 Sin cookies de seguimiento</strong>
+            <p><span data-i18n="cookie-text">Este sitio no usa cookies de publicidad ni analítica. Solo recordamos en tu navegador que ya viste este aviso.</span> <a href="privacidad.html" data-i18n="cookie-link">Política de privacidad</a></p>
         </div>
         <div class="cookie-actions">
-            <button class="cookie-btn-ess" id="cookieEssential" data-i18n="cookie-ess">Solo esenciales</button>
-            <button class="cookie-btn-acc" id="cookieAccept" data-i18n="cookie-acc">Aceptar todas</button>
+            <button class="cookie-btn-acc" id="cookieAccept" data-i18n="cookie-acc">Entendido</button>
         </div>
     </div>
 </div>
