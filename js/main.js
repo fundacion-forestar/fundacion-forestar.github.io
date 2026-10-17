@@ -282,8 +282,8 @@ document.getElementById('contactForm').addEventListener('submit', async e => {
     if (status) {
       status.style.color = '#c0392b';
       status.textContent = lang === 'es'
-        ? '⚠️ No se pudo enviar. Escríbenos directo a fundacionforestar03@gmail.com o por WhatsApp.'
-        : '⚠️ Could not send. Please email fundacionforestar03@gmail.com or WhatsApp us directly.';
+        ? '⚠️ No se pudo enviar. Escríbenos directo a contacto@fundacionforestar.org o por WhatsApp.'
+        : '⚠️ Could not send. Please email contacto@fundacionforestar.org or WhatsApp us directly.';
     }
   }
 });
