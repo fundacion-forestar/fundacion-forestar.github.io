@@ -94,3 +94,9 @@
   .carbon-full-main { flex-direction: column; gap: 0.6rem; }
   .carbon-full-side { min-width: 0; width: 100%; }
 }
+
+/* Enlace a condiciones de reserva */
+.carbon-terms { margin-top: 0.8rem; font-size: 0.92rem; }
+.carbon-terms a { color: var(--forest-main); font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
+.carbon-terms a:hover { color: var(--forest-dark); }
+a.btn-lang { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
