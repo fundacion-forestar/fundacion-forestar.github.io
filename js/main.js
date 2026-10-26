@@ -83,6 +83,7 @@ const t = {
     'pkg2-name':'Caño','pkg2-tons':'300 toneladas CO₂','pkg2-per':'USD 23 / tCO₂',
     'pkg3-name':'Sabana','pkg3-tons':'600 toneladas CO₂','pkg3-per':'USD 20 / tCO₂',
     'pkg4-name':'Orinoquia','pkg4-tons':'3.151 toneladas CO₂','pkg4-per':'USD 16 / tCO₂',
+    'pkg5-tag':'Proyecto completo · 150 ha','pkg5-name':'Juriepe','pkg5-tons':'4.728 toneladas CO₂ — todo el potencial estimado del proyecto, para un solo comprador','pkg5-price':'A convenir','pkg5-per':'Precio según plazo y condiciones de la reserva','pkg5-cta':'Solicitar cotización',
     'pkg-cta':'Solicitar','pkg-popular':'Popular',
     'faq-label':'Preguntas Frecuentes','faq-title-1':'Todo sobre los','faq-title-2':'bonos de carbono',
     'faq-q1':'¿Qué es Gold Standard y por qué es importante?',
@@ -189,6 +190,7 @@ const t = {
     'pkg2-name':'Caño','pkg2-tons':'300 tonnes CO₂','pkg2-per':'USD 23 / tCO₂',
     'pkg3-name':'Sabana','pkg3-tons':'600 tonnes CO₂','pkg3-per':'USD 20 / tCO₂',
     'pkg4-name':'Orinoquia','pkg4-tons':'3,151 tonnes CO₂','pkg4-per':'USD 16 / tCO₂',
+    'pkg5-tag':'Full project · 150 ha','pkg5-name':'Juriepe','pkg5-tons':'4,728 tonnes CO₂ — the full estimated potential of the project, for a single buyer','pkg5-price':'Price on request','pkg5-per':'Price depends on term and reservation conditions','pkg5-cta':'Request a quote',
     'pkg-cta':'Request','pkg-popular':'Popular',
     'faq-label':'Frequently Asked Questions','faq-title-1':'All about','faq-title-2':'carbon credits',
     'faq-q1':'What is Gold Standard and why is it important?',
@@ -345,6 +347,7 @@ function calcularHuella() {
   else if (tons <= 300)  { pkg='Caño';      emoji='🌊'; priceUSD='USD 6,900';  priceEUR='€6,650';  priceCOP='COP 29.5M'; }
   else if (tons <= 600)  { pkg='Sabana';    emoji='🌾'; priceUSD='USD 12,000'; priceEUR='€11,580'; priceCOP='COP 51M'; }
   else if (tons <= 3151) { pkg='Orinoquia'; emoji='🦅'; priceUSD='USD 50,416'; priceEUR='€48,700'; priceCOP='COP 215M'; }
+  else if (tons <= 4728) { pkg='Juriepe'; emoji='🏞️'; priceUSD = lang === 'es' ? 'A convenir' : 'Price on request'; priceEUR='—'; priceCOP='—'; }
   else { pkg = lang === 'es' ? 'Personalizado' : 'Custom'; emoji='🌍'; priceUSD = lang === 'es' ? 'Consultar' : 'Contact us'; priceEUR='—'; priceCOP='—'; }
 
   document.getElementById('rPkgEmoji').textContent = emoji;

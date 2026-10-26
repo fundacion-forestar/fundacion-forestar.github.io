@@ -80,3 +80,17 @@
   .timeline-content h4 { font-size: 0.98rem; }
   .timeline-content p { font-size: 0.88rem; }
 }
+
+/* Paquete Juriepe: proyecto completo, tarjeta ancha */
+.carbon-card.carbon-full { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 2rem; text-align: left; padding: 1.8rem 2.2rem; background: linear-gradient(135deg, #F1F8E9 0%, #fff 70%); border-color: var(--forest-light); }
+.carbon-full-main { display: flex; align-items: center; gap: 1.4rem; }
+.carbon-full-main .carbon-emoji { margin: 0; font-size: 2.6rem; }
+.carbon-full-main .carbon-tons { margin-bottom: 0; max-width: 520px; }
+.carbon-full-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--forest-main); margin-bottom: 0.2rem; }
+.carbon-full-side { min-width: 230px; text-align: center; }
+.carbon-full-side .carbon-price-per { margin-bottom: 1rem; }
+@media (max-width: 768px) {
+  .carbon-card.carbon-full { flex-direction: column; text-align: center; padding: 2rem 1.5rem; gap: 1.2rem; }
+  .carbon-full-main { flex-direction: column; gap: 0.6rem; }
+  .carbon-full-side { min-width: 0; width: 100%; }
+}
