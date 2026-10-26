@@ -210,7 +210,7 @@ section { padding: 5rem 5%; }
 .carbon-card.featured .btn-carbon:hover { background: var(--carbon-amber); }
 
 .team-section { background: var(--cream); }
-.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.8rem; }
+.team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.8rem; }
 .team-card { border: 1px solid rgba(45,106,45,0.12); border-radius: 16px; padding: 2rem 1.5rem; text-align: center; transition: var(--t); background: var(--white); }
 .team-card:hover { box-shadow: var(--shadow); border-color: var(--forest-light); transform: translateY(-3px); }
 .team-avatar { width: 76px; height: 76px; border-radius: 50%; background: var(--light-bg); display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 1.2rem; border: 3px solid var(--forest-light); }
