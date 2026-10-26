@@ -97,7 +97,8 @@ EXTRA = {
     'Pionera': 'Pioneer',
     # Proyecto
     'Propuesta EUROCLIMA+ (UE)': 'EUROCLIMA+ proposal (EU)',
-    'Gold Standard (en certificación)': 'Gold Standard (certification in progress)',
+    'Certificación internacional (en preparación)': 'International certification (in preparation)',
+    'En preparación': 'In preparation',
     'Propuesta PPD Colombia — GEF / PNUD': 'PPD Colombia proposal — GEF / UNDP',
     'tCO₂/año': 'tCO₂/year',
     # Equipo
@@ -169,21 +170,21 @@ def meta(attr, nombre, valor):
 
 cab = cab.replace('<html lang="es">', '<html lang="en">', 1)
 cab = re.sub(r'<title>.*?</title>',
-             '<title>Fundación Forestar — Ecological Restoration & Carbon Credits pursuing Gold Standard | Colombia</title>', cab, count=1)
-meta('name', 'description', 'Fundación Forestar: ecological restoration and carbon credits pursuing Gold Standard certification, biodiversity conservation in the Colombian Orinoquía. 150 hectares under a loan-for-use agreement for restoration and 4,728 tCO₂ estimated.')
-meta('name', 'keywords', 'carbon credits Colombia, ecological restoration Orinoquia, Gold Standard carbon credits, nature-based carbon removal, SBTi BVCM, biodiversity conservation Colombia')
+             '<title>Fundación Forestar — Ecological Restoration & Carbon Credits | Colombia</title>', cab, count=1)
+meta('name', 'description', 'Fundación Forestar: ecological restoration and carbon credits in preparation for international certification, biodiversity conservation in the Colombian Orinoquía. 150 hectares under a loan-for-use agreement for restoration and 4,728 tCO₂ estimated.')
+meta('name', 'keywords', 'carbon credits Colombia, ecological restoration Orinoquia, certified carbon credits, nature-based carbon removal, SBTi BVCM, biodiversity conservation Colombia')
 meta('property', 'og:title', 'Fundación Forestar — Ecological Restoration & Carbon Credits | Colombia')
-meta('property', 'og:description', '150 hectares under restoration and 4,728 tCO₂ estimated — project pursuing Gold Standard certification. Colombian Orinoquía. Climate action with real nature.')
+meta('property', 'og:description', '150 hectares under restoration and 4,728 tCO₂ estimated — project in preparation for international certification. Colombian Orinoquía. Climate action with real nature.')
 meta('property', 'og:image:alt', 'Fundación Forestar apiary in the Colombian Orinoquía')
 meta('property', 'og:url', 'https://fundacionforestar.org/en/')
 meta('property', 'og:locale', 'en_US')
 meta('property', 'og:locale:alternate', 'es_CO')
-meta('name', 'twitter:title', 'Fundación Forestar — Carbon Credits pursuing Gold Standard, Colombia')
+meta('name', 'twitter:title', 'Fundación Forestar — Carbon Credits, Colombia')
 meta('name', 'twitter:description', '150 ha under restoration · 4,728 tCO₂ estimated · Colombian Orinoquía')
 cab = cab.replace('<link rel="canonical" href="https://fundacionforestar.org/">',
                   '<link rel="canonical" href="https://fundacionforestar.org/en/">', 1)
 cab = re.sub(r'"description": "[^"]*"',
-             '"description": "Non-profit foundation dedicated to ecological restoration, carbon credits pursuing Gold Standard certification and biodiversity conservation in the Colombian Orinoquía since 2018."',
+             '"description": "Non-profit foundation dedicated to ecological restoration, carbon credits in preparation for international certification and biodiversity conservation in the Colombian Orinoquía since 2018."',
              cab, count=1)
 cab = cab.replace('"url": "https://fundacionforestar.org",', '"url": "https://fundacionforestar.org/en/",', 1)
 
